@@ -7,6 +7,7 @@
     <groupId>com.aemhighered</groupId>
     <artifactId>cq-imageservlet</artifactId>
     <version>1.0.0</version>
+    <packaging>bundle</packaging>
     <description>Dynamic image servlet for CQ 5.5</description>
 
     <repositories>
@@ -79,6 +80,12 @@
             <version>1.6.1-R1236132</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.day.cq.wcm</groupId>
+            <artifactId>cq-wcm-api</artifactId>
+            <version>5.5.2</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -129,7 +136,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Category>cq-imageservlet</Bundle-Category>
                         <Export-Package>
-                            com.aem.*; version="${project.version}",
+                            com.aemhigherweb.*; version="${project.version}",
                         </Export-Package>
                         <Import-Package>*</Import-Package>
                         <Include-Resource>{maven-resources}</Include-Resource>
