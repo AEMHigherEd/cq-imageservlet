@@ -27,7 +27,7 @@
  *
  */
 
-package com.aemhigherweb.cq.servlet;
+package com.aemhighered.cq.servlet;
 
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
